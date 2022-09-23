@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iris Species Prediction</title>
+</head>
+<body background="/static/image/background1.jpg">
+    <div class="input form">
 
+
+        <center>
+
+        <h1> IRIS FLOWER DETECTION </h1><br>
+        
+        <form  action="{{url_for('predict')}}" method="post">
+            <h1 id="heading"> Species Prediction form</h1>
+            <input type="text", name='SL', placeholder="enter 1" ,required="required"/> <br><br>
+            <input type="text", name='SW', placeholder="enter 2" ,required="required"/> <br><br>
+            <input type="text", name='PL', placeholder="enter 3" ,required="required"/> <br><br>
+            <input type="text", name='PW', placeholder="enter 4" ,required="required"/> <br><br><br></b>
+            <button id="submit" ,type="submit" ,class="btn btn-primary btn-block btn-Large">predict </button>
+            <br>
+            <br>
+            {{prediction_text}}
+        
+        
+        </form>
+
+      
+    </center>
+</div>
+</body>
+</html>
